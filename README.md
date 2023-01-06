@@ -21,7 +21,7 @@ Good luck!
 
 Create a node module that can assess a list of webservers and then returns a server with the lowest priority. Also create a unit test that can check if the function is running properly.
 
-![diagram|301x481](./images/backend.jpeg)
+![diagram|301x481](./assignment-backend.jpeg)
 
 #### Requirements:
 - A node module that has a `findServer()` function which returns a Promise that either:
