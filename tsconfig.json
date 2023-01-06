@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2017",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "experimentalDecorators": true, // for @automapper/classes too
+        "emitDecoratorMetadata": true, // for @automapper/classes too
+        "paths": {
+            "@middlewares/*": [
+                "src/middlewares/*"
+            ],
+            "@shared/*": [
+                "src/modules/_shared/*"
+            ],
+            "@common/*": [
+                "src/modules/_common/*"
+            ],
+            "@core/*": [
+                "src/modules/_core/*"
+            ],
+            "@modules/*": [
+                "src/modules/*"
+            ]
+        }
+    }
+}

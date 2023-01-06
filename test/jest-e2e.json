@@ -1,0 +1,30 @@
+{
+    "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+    ],
+    "rootDir": ".",
+    "testEnvironment": "node",
+    "testRegex": ".e2e-spec.ts$",
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "moduleNameMapper": {
+        "^@middlewares/(.*)$": [
+            "<rootDir>/../src/middlewares/$1"
+        ],
+        "^@shared/(.*)$": [
+            "<rootDir>/../src/modules/_shared/$1"
+        ],
+        "^@common/(.*)$": [
+            "<rootDir>/../src/modules/_common/$1"
+        ],
+        "^@core/(.*)$": [
+            "<rootDir>/../src/modules/_core/$1"
+        ],
+        "^@modules/(.*)$": [
+            "<rootDir>/../src/modules/$1"
+        ]
+    }
+}
