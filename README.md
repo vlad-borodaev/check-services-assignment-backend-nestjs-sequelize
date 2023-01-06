@@ -1,12 +1,3 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-
 # Full-stack assignment, backend part
 This assignment consists of two parts:
 
@@ -70,24 +61,37 @@ Create a node module that can assess a list of webservers and then returns a ser
 `NodeJS LTS`, `Jest`, `jest-fetch-mock`
 
 
+# Results
+
+## About the project
+- NestJS with MVC
+- Sequelize ORM, with migrations set up in the project, the path is src/database/migrations. One of them is for creating a table in the database in order to store the test data. The second one adds the test data from the assignment
+- Setup for Postgres
+- Automapper to map entities and DTOs
+- Swagger and DTO properties validation
+- Throttling and caching the GET requests with Redis
+- Docker
+- Hot reload for dev mode
+- Some interceptors, an exception filter
+- Versioning
 
 ## Installation
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ## Running the app
 
 ```bash
-# development
-$ yarn run start
+# development with applying the Sequelize migrations
+$ yarn start
 
-# watch mode
-$ yarn run start:dev
+# watch mode with applying the Sequelize migrations and with hot reload
+$ yarn start:hr
 
-# production mode
-$ yarn run start:prod
+# production mode with applying the Sequelize migrations
+$ yarn start:prod
 ```
 
 ## Test
